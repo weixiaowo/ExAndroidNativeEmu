@@ -1,0 +1,4 @@
+recursive-exclude ./ExAndroidNativeEmu/tests *
+recursive-include ./ExAndroidNativeEmu/androidemu *.so
+recursive-include ./ExAndroidNativeEmu/vfs *
+recursive-include ./ExAndroidNativeEmu/emu_cfg *

@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=65.0.0", "wheel>=0.40.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ExAndroidNativeEmu"
+version = "0.1.0"
+authors = [
+  { name="" },  # 替换为实际作者信息
+]
+description = "Extended Android Native Emulator (based on AndroidNativeEmu)"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "LICENSE" }  # 若有LICENSE文件需补充
+classifiers = [
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "unicorn==1.0.2",
+  "capstone==4.0.1",
+  "keystone-engine==0.9.2",
+    "pyelftools>=0.29",
+  "setuptools>=65.0.0",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=7.0.0",
+]
+
+#[project.urls]
+#"Homepage" = ""  # 替换为项目仓库地址
+#"Bug Tracker" = ""  # 替换为bug跟踪地址
