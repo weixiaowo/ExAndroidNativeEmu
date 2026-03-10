@@ -169,7 +169,6 @@ class Emulator:
         # 而这里直接将0映射空间，,强行运行过去，因为R1刚好为0,否则会报memory unmap异常
         # 最新版本已经解决这个问题，无需再这么映射
         # self.mu.mem_map(0x0, 0x00001000, UC_PROT_READ | UC_PROT_WRITE)
-
         # Android 4.4
         if arch == emu_const.ARCH_ARM32:
             self.system_properties = {"libc.debug.malloc.options": "", "ro.build.version.sdk": "19",
